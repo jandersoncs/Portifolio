@@ -1,6 +1,16 @@
 
 /* ESTILO GERAL */
 *{
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #f3450f;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition:  .2s;
+}
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -152,16 +162,41 @@ header nav ul li{
     padding: 0 40px;
 
 }
-header .btn-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background: #f3450f;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-}
-header .btn-contato button:hover{
-    box-shadow: 0px 0px 8px #f3450f;
 
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #f3450f;
+    transform: scale(1.05);
+
+}
+/* ESTILO TOPO DO SITE  */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #ffff;
+    font-size: 42px;
+    line-height: 40px;
+}
+.topo-do-site .txt-topo-site h1 span{
+    color: #f3450f;
+}
+.topo-do-site .txt-topo-site p{
+    color: #ffff;
+    margin: 40px 0;
+
+}
+
+@keyframes flutuar {
+    0%{
+       top: 0;
+    }
+    100%{
+        top: 30px;
+    }
 }
